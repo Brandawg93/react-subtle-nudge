@@ -9,21 +9,25 @@ _Note:_ This package is currently in beta. More to come!
 ## Installation
 
 npm
+
 ```
 npm install --save react-subtle-nudge
 ```
 
 pnpm
+
 ```
 pnpm install --save react-subtle-nudge
 ```
 
 yarn
+
 ```
 yarn add react-subtle-nudge
 ```
 
 Add the following CSS to your entry file
+
 ```
 import 'react-subtle-nudge/dist/esm/index.css'
 ```
