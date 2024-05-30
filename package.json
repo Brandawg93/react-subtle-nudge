@@ -1,6 +1,6 @@
 {
   "name": "react-subtle-nudge",
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-beta.1",
   "description": "A collection of animations to subtly nudge users to your React components.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -18,7 +18,8 @@
     "format:fix": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run clean && npm run type-check && npm run lint && npm run format && npm run rollup"
   },
   "keywords": [
     "react",
@@ -80,6 +81,6 @@
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
-    "react": "^18.3.1"
+    "react": "^16.0.0"
   }
 }
