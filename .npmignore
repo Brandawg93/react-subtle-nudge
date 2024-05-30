@@ -1,0 +1,7 @@
+webpack.local.config.js
+webpack.production.config.js
+.eslintrc.json
+.eslintignore
+.prettierrc.json
+.prettierignore
+.gitignore

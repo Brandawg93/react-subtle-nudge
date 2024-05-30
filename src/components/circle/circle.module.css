@@ -1,0 +1,68 @@
+.animation {
+  --start-percent: 40%;
+  --end-percent: 60%;
+  position: absolute;
+  top: calc(-1 * var(--offset));
+  left: calc(-1 * var(--offset));
+  height: calc(100% + 2 * var(--offset));
+  width: calc(100% + 2 * var(--offset));
+  overflow: hidden;
+  border-radius: inherit;
+  z-index: -1;
+  &::before {
+    content: '';
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      transparent var(--start-percent),
+      var(--color) 50%,
+      transparent var(--end-percent)
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    aspect-ratio: 1;
+    width: 100%;
+    animation: rotate var(--duration) linear;
+    animation-iteration-count: var(--iterations);
+    animation-fill-mode: forwards;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: var(--offset);
+    height: calc(100% - 2 * var(--offset));
+    width: calc(100% - 2 * var(--offset));
+  }
+}
+
+.outer {
+  display: inline-block;
+  position: relative;
+  border-radius: inherit;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+    --start-percent: 50%;
+    --end-percent: 50%;
+    opacity: 0;
+  }
+  10% {
+    --start-percent: 40%;
+    --end-percent: 60%;
+    opacity: 1;
+  }
+  90% {
+    --start-percent: 40%;
+    --end-percent: 60%;
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+    --start-percent: 50%;
+    --end-percent: 50%;
+    opacity: 0;
+  }
+}

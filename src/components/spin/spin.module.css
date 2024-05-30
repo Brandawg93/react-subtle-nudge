@@ -1,0 +1,19 @@
+.animation {
+  animation-name: spin;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

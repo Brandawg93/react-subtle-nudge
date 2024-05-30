@@ -1,0 +1,13 @@
+.animation {
+  animation-name: pulse;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  20% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+}

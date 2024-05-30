@@ -1,0 +1,19 @@
+.animation {
+  animation-name: squeeze;
+}
+
+@keyframes squeeze {
+  20%,
+  80% {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  70% {
+    transform: scale(0.95, 1.05);
+  }
+}

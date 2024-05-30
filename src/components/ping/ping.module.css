@@ -1,0 +1,18 @@
+.outer {
+  position: relative;
+}
+
+.animation {
+  animation-name: ping;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

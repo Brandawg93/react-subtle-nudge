@@ -1,0 +1,28 @@
+.fancy_btn {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.fancy_div {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.wrapper {
+  display: inline-block;
+  border-radius: 5px;
+}

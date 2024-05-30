@@ -1,0 +1,24 @@
+.animation {
+  backface-visibility: visible !important;
+  animation-name: flip;
+  animation-timing-function: ease;
+}
+
+@keyframes flip {
+  20% {
+    transform: rotateY(0);
+    animation-timing-function: linear;
+  }
+  40% {
+    transform: translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: translateZ(150px) rotateY(190deg);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: rotateY(360deg);
+    animation-timing-function: linear;
+  }
+}

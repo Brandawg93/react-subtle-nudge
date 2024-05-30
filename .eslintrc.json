@@ -1,0 +1,9 @@
+{
+  "extends": ["prettier", "plugin:@typescript-eslint/recommended", "plugin:storybook/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "storybook"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "root": true
+}

@@ -1,0 +1,14 @@
+.animation {
+  animation-name: flash;
+  animation-timing-function: linear;
+}
+
+@keyframes flash {
+  20%,
+  80% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
