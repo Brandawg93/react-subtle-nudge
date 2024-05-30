@@ -37,3 +37,4 @@ dev
 .swc
 test-results
 *storybook.log
+storybook-static
