@@ -1,6 +1,6 @@
 {
   "name": "react-subtle-nudge",
-  "version": "0.1.0",
+  "version": "0.1.0-beta.0",
   "description": "A collection of animations to subtly nudge users to your React components.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
