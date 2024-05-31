@@ -31,11 +31,9 @@ export const Button: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Spin {...args}>
-        <button className={css.fancyBtn}>Click Me!</button>
-      </Spin>
-    </div>
+    <Spin {...args}>
+      <button className={css.fancyBtn}>Click Me!</button>
+    </Spin>
   ),
 }
 
@@ -50,10 +48,8 @@ export const Input: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Spin {...args}>
-        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
-      </Spin>
-    </div>
+    <Spin {...args}>
+      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+    </Spin>
   ),
 }

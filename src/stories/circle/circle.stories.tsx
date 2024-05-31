@@ -7,6 +7,13 @@ import Circle from '../../components/circle'
 
 const meta: Meta<typeof Circle> = {
   component: Circle,
+  decorators: [
+    (Story) => (
+      <div style={{ borderRadius: '5px' }}>
+        <Story />
+      </div>
+    ),
+  ],
   title: 'Components/Circle',
   argTypes: {
     children: {
@@ -33,11 +40,9 @@ export const Button: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Circle {...args}>
-        <button className={css.fancyBtn}>Click Me!</button>
-      </Circle>
-    </div>
+    <Circle {...args}>
+      <button className={css.fancyBtn}>Click Me!</button>
+    </Circle>
   ),
 }
 
@@ -54,10 +59,8 @@ export const Input: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Circle {...args}>
-        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
-      </Circle>
-    </div>
+    <Circle {...args}>
+      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+    </Circle>
   ),
 }

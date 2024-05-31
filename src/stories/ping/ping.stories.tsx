@@ -33,11 +33,9 @@ export const Button: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Ping {...args}>
-        <button className={css.fancyBtn}>Click Me!</button>
-      </Ping>
-    </div>
+    <Ping {...args}>
+      <button className={css.fancyBtn}>Click Me!</button>
+    </Ping>
   ),
 }
 
@@ -54,10 +52,8 @@ export const Input: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Ping {...args}>
-        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
-      </Ping>
-    </div>
+    <Ping {...args}>
+      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+    </Ping>
   ),
 }

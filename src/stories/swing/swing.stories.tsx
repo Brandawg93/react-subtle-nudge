@@ -32,11 +32,9 @@ export const Button: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Swing {...args}>
-        <button className={css.fancyBtn}>Click Me!</button>
-      </Swing>
-    </div>
+    <Swing {...args}>
+      <button className={css.fancyBtn}>Click Me!</button>
+    </Swing>
   ),
 }
 
@@ -51,11 +49,9 @@ export const Input: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Swing {...args}>
-        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
-      </Swing>
-    </div>
+    <Swing {...args}>
+      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+    </Swing>
   ),
 }
 
@@ -70,16 +66,14 @@ export const Sign: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Swing {...args}>
-        <div className={signCss.arrowWrapper}>
-          <div className={signCss.arrowUp}></div>
-          <div className={signCss.arrowUpInner}></div>
-        </div>
-        <div className={signCss.box}>
-          <span>Test Sign!</span>
-        </div>
-      </Swing>
-    </div>
+    <Swing {...args}>
+      <div className={signCss.arrowWrapper}>
+        <div className={signCss.arrowUp}></div>
+        <div className={signCss.arrowUpInner}></div>
+      </div>
+      <div className={signCss.box}>
+        <span>Test Sign!</span>
+      </div>
+    </Swing>
   ),
 }

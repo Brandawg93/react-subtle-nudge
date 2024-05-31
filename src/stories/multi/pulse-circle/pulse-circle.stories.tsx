@@ -33,13 +33,11 @@ export const Button: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Pulse {...args}>
-        <Circle {...args}>
-          <button className={css.fancyBtn}>Click Me!</button>
-        </Circle>
-      </Pulse>
-    </div>
+    <Pulse {...args}>
+      <Circle {...args}>
+        <button className={css.fancyBtn}>Click Me!</button>
+      </Circle>
+    </Pulse>
   ),
 }
 
@@ -54,12 +52,10 @@ export const Input: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Pulse {...args}>
-        <Circle {...args}>
-          <input className={css.fancyInput} placeholder='Write Something!' type='text' />
-        </Circle>
-      </Pulse>
-    </div>
+    <Pulse {...args}>
+      <Circle {...args}>
+        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+      </Circle>
+    </Pulse>
   ),
 }

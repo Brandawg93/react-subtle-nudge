@@ -31,11 +31,9 @@ export const Button: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Squeeze {...args}>
-        <button className={css.fancyBtn}>Click Me!</button>
-      </Squeeze>
-    </div>
+    <Squeeze {...args}>
+      <button className={css.fancyBtn}>Click Me!</button>
+    </Squeeze>
   ),
 }
 
@@ -50,10 +48,8 @@ export const Input: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Squeeze {...args}>
-        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
-      </Squeeze>
-    </div>
+    <Squeeze {...args}>
+      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+    </Squeeze>
   ),
 }

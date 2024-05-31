@@ -31,11 +31,9 @@ export const Button: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Flash {...args}>
-        <button className={css.fancyBtn}>Click Me!</button>
-      </Flash>
-    </div>
+    <Flash {...args}>
+      <button className={css.fancyBtn}>Click Me!</button>
+    </Flash>
   ),
 }
 
@@ -50,10 +48,8 @@ export const Input: Story = {
   },
 
   render: (args) => (
-    <div className={css.wrapper}>
-      <Flash {...args}>
-        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
-      </Flash>
-    </div>
+    <Flash {...args}>
+      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+    </Flash>
   ),
 }
