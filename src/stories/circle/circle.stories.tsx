@@ -1,6 +1,5 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn } from '@storybook/test'
 
 import Circle from '../../components/circle'
 
@@ -34,8 +33,6 @@ export const Button: Story = {
     duration: '2s',
     iterationDelay: '1s',
     reverse: false,
-    onAnimationStart: fn(),
-    onAnimationEnd: fn(),
   },
 
   render: (args) => (
@@ -53,8 +50,6 @@ export const Input: Story = {
     duration: '2s',
     iterationDelay: '1s',
     reverse: false,
-    onAnimationStart: fn(),
-    onAnimationEnd: fn(),
   },
 
   render: (args) => (

@@ -1,6 +1,5 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn } from '@storybook/test'
 
 import Bounce from '../../../components/bounce'
 import Shake from '../../../components/shake'
@@ -27,8 +26,6 @@ export const Button: Story = {
     iterations: 0,
     iterationDelay: '1s',
     reverse: false,
-    onAnimationStart: fn(),
-    onAnimationEnd: fn(),
   },
 
   render: (args) => (
@@ -46,8 +43,6 @@ export const Input: Story = {
     iterations: 0,
     iterationDelay: '1s',
     reverse: false,
-    onAnimationStart: fn(),
-    onAnimationEnd: fn(),
   },
 
   render: (args) => (

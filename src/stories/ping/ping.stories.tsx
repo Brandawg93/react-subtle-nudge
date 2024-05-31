@@ -1,6 +1,5 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn } from '@storybook/test'
 
 import Ping from '../../components/ping'
 
@@ -27,8 +26,6 @@ export const Button: Story = {
     reverse: false,
     color: '#e9e9e9',
     scale: 1.5,
-    onAnimationStart: fn(),
-    onAnimationEnd: fn(),
   },
 
   render: (args) => (
@@ -46,8 +43,6 @@ export const Input: Story = {
     reverse: false,
     color: '#e9e9e9',
     scale: 1.5,
-    onAnimationStart: fn(),
-    onAnimationEnd: fn(),
   },
 
   render: (args) => (
