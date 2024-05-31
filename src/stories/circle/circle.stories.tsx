@@ -27,6 +27,7 @@ export const Button: Story = {
     iterations: 0,
     duration: '2s',
     iterationDelay: '1s',
+    reverse: false,
     onAnimationStart: fn(),
     onAnimationEnd: fn(),
   },
@@ -47,12 +48,15 @@ export const Input: Story = {
     iterations: 0,
     duration: '2s',
     iterationDelay: '1s',
+    reverse: false,
+    onAnimationStart: fn(),
+    onAnimationEnd: fn(),
   },
 
   render: (args) => (
     <div className={css.wrapper}>
       <Circle {...args}>
-        <input className={css.fancyInput} type='text' />
+        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
       </Circle>
     </div>
   ),

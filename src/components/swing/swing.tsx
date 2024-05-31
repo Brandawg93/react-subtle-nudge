@@ -5,6 +5,9 @@ import css from './swing.module.css'
 
 export interface Props extends BaseProps {}
 
+/**
+ * A swing animation.
+ */
 const Swing = (props: Props) => (
   <Animation
     onAnimationStart={props.onAnimationStart}

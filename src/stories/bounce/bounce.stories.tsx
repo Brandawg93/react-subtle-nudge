@@ -25,9 +25,9 @@ export const Button: Story = {
     duration: '1s',
     iterations: 0,
     iterationDelay: '1s',
+    reverse: false,
     onAnimationStart: fn(),
     onAnimationEnd: fn(),
-    reverse: false,
   },
 
   render: (args) => (
@@ -44,6 +44,7 @@ export const Input: Story = {
     duration: '1s',
     iterations: 0,
     iterationDelay: '1s',
+    reverse: false,
     onAnimationStart: fn(),
     onAnimationEnd: fn(),
   },
@@ -61,9 +62,10 @@ export const Div: Story = {
   args: {
     duration: '1s',
     iterations: 0,
+    iterationDelay: '1s',
+    reverse: false,
     onAnimationStart: fn(),
     onAnimationEnd: fn(),
-    iterationDelay: '1s',
   },
 
   render: (args) => (

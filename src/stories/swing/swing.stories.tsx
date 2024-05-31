@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
+import { fn } from '@storybook/test'
 import css from '../common.module.css'
 import signCss from './sign.module.css'
 
@@ -26,6 +27,8 @@ export const Button: Story = {
     iterations: 0,
     iterationDelay: '1s',
     reverse: false,
+    onAnimationStart: fn(),
+    onAnimationEnd: fn(),
   },
 
   render: (args) => (
@@ -38,16 +41,34 @@ export const Button: Story = {
 }
 
 export const Input: Story = {
+  args: {
+    duration: '1s',
+    iterations: 0,
+    iterationDelay: '1s',
+    reverse: false,
+    onAnimationStart: fn(),
+    onAnimationEnd: fn(),
+  },
+
   render: (args) => (
     <div className={css.wrapper}>
       <Swing {...args}>
-        <input className={css.fancyInput} type='text' />
+        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
       </Swing>
     </div>
   ),
 }
 
 export const Sign: Story = {
+  args: {
+    duration: '1s',
+    iterations: 0,
+    iterationDelay: '1s',
+    reverse: false,
+    onAnimationStart: fn(),
+    onAnimationEnd: fn(),
+  },
+
   render: (args) => (
     <div className={css.wrapper}>
       <Swing {...args}>

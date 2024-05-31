@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
+import { fn } from '@storybook/test'
 import css from '../common.module.css'
 
 import Wiggle from '../../components/wiggle'
@@ -24,6 +25,9 @@ export const Button: Story = {
     duration: '1s',
     iterations: 0,
     iterationDelay: '1s',
+    reverse: false,
+    onAnimationStart: fn(),
+    onAnimationEnd: fn(),
   },
 
   render: (args) => (
@@ -36,10 +40,19 @@ export const Button: Story = {
 }
 
 export const Input: Story = {
+  args: {
+    duration: '1s',
+    iterations: 0,
+    iterationDelay: '1s',
+    reverse: false,
+    onAnimationStart: fn(),
+    onAnimationEnd: fn(),
+  },
+
   render: (args) => (
     <div className={css.wrapper}>
       <Wiggle {...args}>
-        <input className={css.fancyInput} type='text' />
+        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
       </Wiggle>
     </div>
   ),

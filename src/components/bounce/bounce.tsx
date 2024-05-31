@@ -5,6 +5,9 @@ import css from './bounce.module.css'
 
 export interface Props extends BaseProps {}
 
+/**
+ * A bounce animation.
+ */
 const Bounce = (props: Props) => (
   <Animation
     onAnimationStart={props.onAnimationStart}

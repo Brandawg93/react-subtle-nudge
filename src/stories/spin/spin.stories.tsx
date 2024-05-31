@@ -25,6 +25,7 @@ export const Button: Story = {
     duration: '1s',
     iterations: 0,
     iterationDelay: '1s',
+    reverse: false,
     onAnimationStart: fn(),
     onAnimationEnd: fn(),
   },
@@ -43,6 +44,7 @@ export const Input: Story = {
     duration: '1s',
     iterations: 0,
     iterationDelay: '1s',
+    reverse: false,
     onAnimationStart: fn(),
     onAnimationEnd: fn(),
   },
@@ -50,7 +52,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Spin {...args}>
-        <input className={css.fancyInput} type='text' />
+        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
       </Spin>
     </div>
   ),

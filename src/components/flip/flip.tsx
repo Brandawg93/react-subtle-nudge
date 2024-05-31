@@ -5,6 +5,9 @@ import css from './flip.module.css'
 
 export interface Props extends BaseProps {}
 
+/**
+ * A flip animation.
+ */
 const Flip = (props: Props) => (
   <Animation
     onAnimationStart={props.onAnimationStart}

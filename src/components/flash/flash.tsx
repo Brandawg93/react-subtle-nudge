@@ -5,6 +5,9 @@ import css from './flash.module.css'
 
 export interface Props extends BaseProps {}
 
+/**
+ * A flash animation.
+ */
 const Flash = (props: Props) => (
   <Animation
     onAnimationStart={props.onAnimationStart}

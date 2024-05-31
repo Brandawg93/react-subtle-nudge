@@ -5,6 +5,9 @@ import css from './shake.module.css'
 
 export interface Props extends BaseProps {}
 
+/**
+ * A shake animation.
+ */
 const Shake = (props: Props) => (
   <Animation
     onAnimationStart={props.onAnimationStart}

@@ -5,6 +5,9 @@ import css from './spin.module.css'
 
 export interface Props extends BaseProps {}
 
+/**
+ * A spin animation.
+ */
 const Spin = (props: Props) => (
   <Animation
     onAnimationStart={props.onAnimationStart}

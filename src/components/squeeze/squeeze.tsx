@@ -5,6 +5,9 @@ import css from './squeeze.module.css'
 
 export interface Props extends BaseProps {}
 
+/**
+ * A squeeze animation.
+ */
 const Squeeze = (props: Props) => (
   <Animation
     onAnimationStart={props.onAnimationStart}
