@@ -6,6 +6,8 @@ import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
 import terser from '@rollup/plugin-terser'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import copy from 'rollup-plugin-copy'
+import del from 'rollup-plugin-delete'
 
 import packageJson from './package.json' assert { type: 'json' }
 
@@ -42,7 +44,11 @@ export default [
   {
     input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts()],
+    plugins: [
+      copy({ targets: [{ src: 'dist/esm/*.css*', dest: 'dist' }], hook: 'buildStart' }),
+      del({ targets: ['dist/esm/*.css*', 'dist/cjs/*.css*'], hook: 'buildEnd' }),
+      dts(),
+    ],
     external: [/\.css$/],
   },
 ]
