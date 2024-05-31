@@ -24,6 +24,7 @@
     width: 100%;
     animation: rotate var(--duration) linear;
     animation-iteration-count: var(--iterations);
+    animation-direction: var(--direction);
     animation-fill-mode: forwards;
   }
 

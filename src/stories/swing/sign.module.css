@@ -1,0 +1,40 @@
+.arrowUp {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+
+  border-bottom: 40px solid black;
+}
+
+.arrowWrapper {
+  width: 80px;
+  height: 40px;
+  position: relative;
+  background-color: white;
+  border-color: white;
+}
+
+.arrowUpInner {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+
+  border-bottom: 35px solid;
+  border-bottom-color: inherit;
+}
+
+.box {
+  width: 88px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: -5px;
+  text-align: center;
+  padding-top: 15px;
+}
