@@ -1,20 +1,22 @@
 .animation {
   transform-origin: top center;
   animation-name: swing;
-  animation-timing-function: ease;
 }
 
 @keyframes swing {
-  20% {
+  10% {
+    transform: rotate(0deg);
+  }
+  30% {
     transform: rotate(15deg);
   }
-  40% {
+  50% {
     transform: rotate(-10deg);
   }
-  60% {
+  70% {
     transform: rotate(5deg);
   }
-  80% {
+  90% {
     transform: rotate(0deg);
   }
 }
