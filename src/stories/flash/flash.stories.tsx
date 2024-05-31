@@ -1,7 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
-import css from '../common.module.css'
 
 import Flash from '../../components/flash'
 
@@ -32,7 +31,7 @@ export const Button: Story = {
 
   render: (args) => (
     <Flash {...args}>
-      <button className={css.fancyBtn}>Click Me!</button>
+      <button>Click Me!</button>
     </Flash>
   ),
 }
@@ -49,7 +48,7 @@ export const Input: Story = {
 
   render: (args) => (
     <Flash {...args}>
-      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+      <input placeholder='Write Something!' type='text' />
     </Flash>
   ),
 }

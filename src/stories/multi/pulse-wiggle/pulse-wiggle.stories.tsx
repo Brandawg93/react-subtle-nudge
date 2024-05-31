@@ -1,7 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
-import css from '../../common.module.css'
 
 import Pulse from '../../../components/pulse'
 import Wiggle from '../../../components/wiggle'
@@ -35,7 +34,7 @@ export const Button: Story = {
   render: (args) => (
     <Pulse {...args}>
       <Wiggle {...args}>
-        <button className={css.fancyBtn}>Click Me!</button>
+        <button>Click Me!</button>
       </Wiggle>
     </Pulse>
   ),
@@ -54,7 +53,7 @@ export const Input: Story = {
   render: (args) => (
     <Pulse {...args}>
       <Wiggle {...args}>
-        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+        <input placeholder='Write Something!' type='text' />
       </Wiggle>
     </Pulse>
   ),

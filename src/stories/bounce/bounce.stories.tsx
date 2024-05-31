@@ -1,7 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
-import css from '../common.module.css'
 
 import Bounce from '../../components/bounce'
 
@@ -32,7 +31,7 @@ export const Button: Story = {
 
   render: (args) => (
     <Bounce {...args}>
-      <button className={css.fancyBtn}>Click Me!</button>
+      <button>Click Me!</button>
     </Bounce>
   ),
 }
@@ -49,24 +48,7 @@ export const Input: Story = {
 
   render: (args) => (
     <Bounce {...args}>
-      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
-    </Bounce>
-  ),
-}
-
-export const Div: Story = {
-  args: {
-    duration: '1s',
-    iterations: 0,
-    iterationDelay: '1s',
-    reverse: false,
-    onAnimationStart: fn(),
-    onAnimationEnd: fn(),
-  },
-
-  render: (args) => (
-    <Bounce {...args}>
-      <div className={css.fancyDiv}>test</div>
+      <input placeholder='Write Something!' type='text' />
     </Bounce>
   ),
 }

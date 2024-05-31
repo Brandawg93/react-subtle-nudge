@@ -1,7 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
-import css from '../common.module.css'
 
 import Circle from '../../components/circle'
 
@@ -41,7 +40,7 @@ export const Button: Story = {
 
   render: (args) => (
     <Circle {...args}>
-      <button className={css.fancyBtn}>Click Me!</button>
+      <button>Click Me!</button>
     </Circle>
   ),
 }
@@ -60,7 +59,7 @@ export const Input: Story = {
 
   render: (args) => (
     <Circle {...args}>
-      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+      <input placeholder='Write Something!' type='text' />
     </Circle>
   ),
 }

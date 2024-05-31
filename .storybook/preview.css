@@ -1,0 +1,28 @@
+.storybook-wrapper button {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.storybook-wrapper input {
+  background-color: #f1f1f1;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.storybook-wrapper {
+  display: inline-block;
+}

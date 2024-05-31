@@ -1,7 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
-import css from '../common.module.css'
 
 import Ping from '../../components/ping'
 
@@ -34,7 +33,7 @@ export const Button: Story = {
 
   render: (args) => (
     <Ping {...args}>
-      <button className={css.fancyBtn}>Click Me!</button>
+      <button>Click Me!</button>
     </Ping>
   ),
 }
@@ -53,7 +52,7 @@ export const Input: Story = {
 
   render: (args) => (
     <Ping {...args}>
-      <input className={css.fancyInput} placeholder='Write Something!' type='text' />
+      <input placeholder='Write Something!' type='text' />
     </Ping>
   ),
 }

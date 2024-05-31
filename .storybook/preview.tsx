@@ -2,7 +2,7 @@ import React from 'react'
 import type { Preview } from '@storybook/react'
 import { Title, Subtitle, Description, Primary, Controls } from '@storybook/blocks'
 import ReactGA from 'react-ga4'
-import '../src/stories/common.module.css'
+import './preview.css'
 
 if (process.env.NODE_ENV !== 'development') ReactGA.initialize('G-7P3LB8SWYT')
 
@@ -10,7 +10,7 @@ const preview: Preview = {
   tags: ['autodocs'],
   decorators: [
     (Story) => (
-      <div style={{ display: 'inline-block' }}>
+      <div className='storybook-wrapper'>
         <Story />
       </div>
     ),
