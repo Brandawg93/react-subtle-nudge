@@ -6,6 +6,7 @@ import Flip from '../../components/flip'
 
 const meta: Meta<typeof Flip> = {
   component: Flip,
+  title: 'Components/Flip',
   argTypes: {
     children: {
       table: {
@@ -27,7 +28,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Flip {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Flip>
     </div>
   ),
@@ -37,7 +38,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Flip {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} type='text' />
       </Flip>
     </div>
   ),

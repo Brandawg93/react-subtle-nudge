@@ -7,6 +7,7 @@ import Wiggle from '../../../components/wiggle'
 
 const meta: Meta<typeof Pulse> = {
   component: Pulse,
+  title: 'Components/Combination/Pulse&Wiggle',
   subcomponents: { Wiggle: Wiggle as React.ComponentType<unknown> },
   argTypes: {
     children: {
@@ -25,7 +26,7 @@ export const Button: Story = {
     <div className={css.wrapper}>
       <Pulse {...args}>
         <Wiggle {...args}>
-          <button className={css.fancy_btn}>test</button>
+          <button className={css.fancyBtn}>Click Me!</button>
         </Wiggle>
       </Pulse>
     </div>
@@ -37,7 +38,7 @@ export const Input: Story = {
     <div className={css.wrapper}>
       <Pulse {...args}>
         <Wiggle {...args}>
-          <input type='text' />
+          <input className={css.fancyInput} type='text' />
         </Wiggle>
       </Pulse>
     </div>

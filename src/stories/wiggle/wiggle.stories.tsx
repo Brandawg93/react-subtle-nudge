@@ -6,6 +6,7 @@ import Wiggle from '../../components/wiggle'
 
 const meta: Meta<typeof Wiggle> = {
   component: Wiggle,
+  title: 'Components/Wiggle',
   argTypes: {
     children: {
       table: {
@@ -28,7 +29,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Wiggle {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Wiggle>
     </div>
   ),
@@ -38,7 +39,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Wiggle {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} type='text' />
       </Wiggle>
     </div>
   ),

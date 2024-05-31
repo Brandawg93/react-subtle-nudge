@@ -7,6 +7,7 @@ import Swing from '../../components/swing'
 
 const meta: Meta<typeof Swing> = {
   component: Swing,
+  title: 'Components/Swing',
   argTypes: {
     children: {
       table: {
@@ -30,7 +31,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Swing {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Swing>
     </div>
   ),
@@ -40,7 +41,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Swing {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} type='text' />
       </Swing>
     </div>
   ),

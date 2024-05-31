@@ -6,6 +6,7 @@ import Flash from '../../components/flash'
 
 const meta: Meta<typeof Flash> = {
   component: Flash,
+  title: 'Components/Flash',
   argTypes: {
     children: {
       table: {
@@ -28,7 +29,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Flash {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Flash>
     </div>
   ),
@@ -38,7 +39,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Flash {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} type='text' />
       </Flash>
     </div>
   ),

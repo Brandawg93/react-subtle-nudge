@@ -1,4 +1,4 @@
-.fancy_btn {
+.fancyBtn {
   background-color: #f1f1f1;
   border: 1px solid #f1f1f1;
   border-radius: 5px;
@@ -13,12 +13,22 @@
     color 0.3s;
 }
 
-.fancy_div {
+.fancyDiv {
   background-color: #f1f1f1;
   border: 1px solid #f1f1f1;
   border-radius: 5px;
   width: 100px;
   height: 100px;
+  text-align: center;
+}
+
+.fancyInput {
+  background-color: #f1f1f1;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
 }
 

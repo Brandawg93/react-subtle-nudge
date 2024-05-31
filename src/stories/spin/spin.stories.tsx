@@ -7,6 +7,7 @@ import Spin from '../../components/spin'
 
 const meta: Meta<typeof Spin> = {
   component: Spin,
+  title: 'Components/Spin',
   argTypes: {
     children: {
       table: {
@@ -31,7 +32,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Spin {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Spin>
     </div>
   ),
@@ -49,7 +50,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Spin {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} type='text' />
       </Spin>
     </div>
   ),

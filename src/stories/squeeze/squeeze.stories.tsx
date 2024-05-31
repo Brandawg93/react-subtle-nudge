@@ -6,6 +6,7 @@ import Squeeze from '../../components/squeeze'
 
 const meta: Meta<typeof Squeeze> = {
   component: Squeeze,
+  title: 'Components/Squeeze',
   argTypes: {
     children: {
       table: {
@@ -22,7 +23,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Squeeze {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Squeeze>
     </div>
   ),
@@ -32,7 +33,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Squeeze {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} type='text' />
       </Squeeze>
     </div>
   ),

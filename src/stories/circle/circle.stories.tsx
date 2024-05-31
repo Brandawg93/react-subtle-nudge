@@ -7,6 +7,7 @@ import Circle from '../../components/circle'
 
 const meta: Meta<typeof Circle> = {
   component: Circle,
+  title: 'Components/Circle',
   argTypes: {
     children: {
       table: {
@@ -33,7 +34,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Circle {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Circle>
     </div>
   ),
@@ -51,7 +52,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Circle {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} type='text' />
       </Circle>
     </div>
   ),

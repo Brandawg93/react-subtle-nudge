@@ -7,6 +7,7 @@ import Bounce from '../../components/bounce'
 
 const meta: Meta<typeof Bounce> = {
   component: Bounce,
+  title: 'Components/Bounce',
   argTypes: {
     children: {
       table: {
@@ -32,7 +33,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Bounce {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Bounce>
     </div>
   ),
@@ -50,7 +51,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Bounce {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} placeholder='Write Something!' type='text' />
       </Bounce>
     </div>
   ),
@@ -68,7 +69,7 @@ export const Div: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Bounce {...args}>
-        <div className={css.fancy_div}>test</div>
+        <div className={css.fancyDiv}>test</div>
       </Bounce>
     </div>
   ),

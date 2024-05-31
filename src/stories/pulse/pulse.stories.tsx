@@ -6,6 +6,7 @@ import Pulse from '../../components/pulse'
 
 const meta: Meta<typeof Pulse> = {
   component: Pulse,
+  title: 'Components/Pulse',
   argTypes: {
     children: {
       table: {
@@ -22,7 +23,7 @@ export const Button: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Pulse {...args}>
-        <button className={css.fancy_btn}>test</button>
+        <button className={css.fancyBtn}>Click Me!</button>
       </Pulse>
     </div>
   ),
@@ -32,7 +33,7 @@ export const Input: Story = {
   render: (args) => (
     <div className={css.wrapper}>
       <Pulse {...args}>
-        <input type='text' />
+        <input className={css.fancyInput} type='text' />
       </Pulse>
     </div>
   ),

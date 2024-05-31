@@ -7,6 +7,7 @@ import Shake from '../../../components/shake'
 
 const meta: Meta<typeof Bounce> = {
   component: Bounce,
+  title: 'Components/Combination/Bounce&Shake',
   subcomponents: { Shake: Shake as React.ComponentType<unknown> },
   argTypes: {
     children: {
@@ -25,7 +26,7 @@ export const Button: Story = {
     <div className={css.wrapper}>
       <Bounce {...args}>
         <Shake {...args}>
-          <button className={css.fancy_btn}>test</button>
+          <button className={css.fancyBtn}>Click Me!</button>
         </Shake>
       </Bounce>
     </div>
@@ -37,7 +38,7 @@ export const Input: Story = {
     <div className={css.wrapper}>
       <Bounce {...args}>
         <Shake {...args}>
-          <input type='text' />
+          <input className={css.fancyInput} type='text' />
         </Shake>
       </Bounce>
     </div>
