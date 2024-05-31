@@ -18,7 +18,7 @@
     "format:fix": "prettier --write .",
     "precheck": "concurrently \"npm run type-check\" \"npm run lint\" \"npm run format\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "NODE_ENV=development storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run clean && npm run type-check && npm run lint && npm run format && npm run rollup",
     "prepare": "husky install"
