@@ -1,17 +1,10 @@
-name: Deploy Storybook
+name: 'Chromatic'
 
-on:
-  push:
-    branches:
-      - 'main'
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+on: push
 
 jobs:
-  deploy:
+  chromatic:
+    name: Run Chromatic
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,8 +28,7 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
-      - id: build-publish
-        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+      - name: Run Chromatic
+        uses: chromaui/action@latest
         with:
-          path: storybook-static
-          install_command: pnpm install
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
