@@ -31,6 +31,10 @@ const Ping = (props: Props) => {
   )
 }
 
-Ping.defaultProps = defaultProps
+Ping.defaultProps = {
+  ...defaultProps,
+  scale: 1.5,
+  color: 'white',
+}
 
 export default Ping

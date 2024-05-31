@@ -26,6 +26,7 @@ export const Button: Story = {
     iterationDelay: '1s',
     reverse: false,
     color: '##e9e9e9',
+    scale: 1.5,
   },
 
   render: (args) => (
@@ -44,6 +45,7 @@ export const Input: Story = {
     iterationDelay: '1s',
     reverse: false,
     color: '##e9e9e9',
+    scale: 1.5,
   },
 
   render: (args) => (

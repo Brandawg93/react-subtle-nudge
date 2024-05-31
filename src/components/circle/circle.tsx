@@ -31,6 +31,10 @@ const Circle = (props: Props) => {
   )
 }
 
-Circle.defaultProps = defaultProps
+Circle.defaultProps = {
+  ...defaultProps,
+  thickness: 1,
+  color: 'white',
+}
 
 export default Circle
