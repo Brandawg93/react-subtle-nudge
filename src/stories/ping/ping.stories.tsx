@@ -5,6 +5,13 @@ import Ping from '../../components/ping'
 
 const meta: Meta<typeof Ping> = {
   component: Ping,
+  decorators: [
+    (Story) => (
+      <div style={{ borderRadius: '5px' }}>
+        <Story />
+      </div>
+    ),
+  ],
   title: 'Components/Ping',
   argTypes: {
     children: {
