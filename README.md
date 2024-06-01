@@ -33,7 +33,7 @@ yarn add react-subtle-nudge
 
 Add the following CSS to your entry file
 
-```bash
+```js
 import 'react-subtle-nudge/dist/index.css'
 ```
 
