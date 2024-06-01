@@ -2,8 +2,6 @@
 
 A collection of animations to subtly nudge users to your React components.
 
-_Note:_ This package is currently in beta. More to come!
-
 [![NPM version](https://img.shields.io/npm/v/react-subtle-nudge.svg?style=flat)](https://npmjs.com/package/react-subtle-nudge)
 [![NPM downloads](https://img.shields.io/npm/dm/react-subtle-nudge.svg?style=flat)](https://npmjs.com/package/react-subtle-nudge)
 [![Storybook](https://raw.githubusercontent.com/storybookjs/brand/master/badge/badge-storybook.svg)](https://brandawg93.github.io/react-subtle-nudge/)
