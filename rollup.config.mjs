@@ -30,7 +30,7 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ tsconfig: './tsconfig.json', exclude: ['**/*.stories.tsx'] }),
+      typescript({ tsconfig: './tsconfig.json', exclude: ['**/*.stories.tsx', '**/*.test.tsx'] }),
       postcss({
         plugins: [autoprefixer()],
         sourceMap: true,

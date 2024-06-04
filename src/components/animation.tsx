@@ -41,6 +41,7 @@ const Animation = (props: Props) => {
 
   return (
     <div
+      data-testid='animation-component'
       onAnimationStart={props.onAnimationStart}
       onAnimationEnd={props.onAnimationEnd}
       onAnimationIteration={handleIteration}

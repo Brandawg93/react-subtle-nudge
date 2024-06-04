@@ -13,9 +13,9 @@
     "declaration": true,
     "declarationDir": "types",
     "sourceMap": true,
-    "rootDir": "src",
     "outDir": "dist",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true
-  }
+  },
+  "include": ["src/**/*"]
 }
