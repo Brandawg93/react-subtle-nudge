@@ -8,6 +8,7 @@
     "skipLibCheck": true,
 
     // Added
+    "lib": ["dom", "esnext"],
     "jsx": "react",
     "module": "ESNext",
     "declaration": true,
@@ -15,7 +16,8 @@
     "sourceMap": true,
     "outDir": "dist",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["@testing-library/jest-dom"]
   },
   "include": ["src/**/*"]
 }
