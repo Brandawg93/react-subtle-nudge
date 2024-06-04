@@ -9,15 +9,7 @@ export interface Props extends BaseProps {}
  * A shake animation.
  */
 const Shake = (props: Props) => (
-  <Animation
-    onAnimationStart={props.onAnimationStart}
-    onAnimationEnd={props.onAnimationEnd}
-    className={css.animation}
-    duration={props.duration}
-    reverse={props.reverse}
-    iterations={props.iterations}
-    iterationDelay={props.iterationDelay}
-  >
+  <Animation {...props} className={css.animation}>
     {props.children}
   </Animation>
 )

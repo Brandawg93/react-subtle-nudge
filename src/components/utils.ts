@@ -25,8 +25,12 @@ export interface BaseProps {
   iterations: number
   /** The amount of time to delay between iterations. */
   iterationDelay: string
+  /** The amount of time to delay before starting the animation. */
+  initialDelay: string
   /** Whether to reverse the animation. */
   reverse: boolean
+  /** Whether the animation is disabled. */
+  disabled: boolean
   /** Callback function triggered when the animation starts. */
   onAnimationStart?: () => void
   /** Callback function triggered when the animation ends. */
@@ -40,5 +44,7 @@ export const defaultProps: BaseProps = {
   duration: '1s',
   iterations: 0,
   iterationDelay: '1s',
+  initialDelay: '0s',
   reverse: false,
+  disabled: false,
 }

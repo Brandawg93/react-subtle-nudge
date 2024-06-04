@@ -21,16 +21,7 @@ const Ping = (props: Props) => {
 
   return (
     <div className={css.outer}>
-      <Animation
-        onAnimationStart={props.onAnimationStart}
-        onAnimationEnd={props.onAnimationEnd}
-        className={css.animation}
-        style={style}
-        duration={props.duration}
-        reverse={props.reverse}
-        iterations={props.iterations}
-        iterationDelay={props.iterationDelay}
-      ></Animation>
+      <Animation {...props} className={css.animation} style={style}></Animation>
       {props.children}
     </div>
   )
