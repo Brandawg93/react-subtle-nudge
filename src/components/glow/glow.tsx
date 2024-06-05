@@ -1,7 +1,7 @@
 import React from 'react'
 import Animation from '../animation'
 import { BaseProps, defaultProps } from '../utils'
-import css from './circle.module.css'
+import css from './glow.module.css'
 
 export interface Props extends BaseProps {
   /** The thickness of the line animation. */
@@ -11,26 +11,21 @@ export interface Props extends BaseProps {
 }
 
 /**
- * A circle animation.
+ * A glow animation.
  */
-const Circle = (props: Props) => {
+const Glow = (props: Props) => {
   const style = {
-    '--offset': `${props.thickness || 1}px`,
+    '--offset': `${props.thickness || 5}px`,
     '--color': `${props.color || 'white'}`,
   } as React.CSSProperties
 
-  return (
-    <div className={css.outer}>
-      <Animation {...props} children={undefined} className={css.animation} style={style}></Animation>
-      {props.children}
-    </div>
-  )
+  return <Animation {...props} className={css.animation} style={style} />
 }
 
-Circle.defaultProps = {
+Glow.defaultProps = {
   ...defaultProps,
-  thickness: 1,
+  thickness: 5,
   color: 'white',
 }
 
-export default Circle
+export default Glow

@@ -10,10 +10,16 @@ export interface Props extends BaseProps {
 
 const Animation = (props: Props) => {
   useEffect(() => {
-    setAnimate(true)
+    if (props.initialDelay !== '0s') {
+      setTimeout(() => {
+        setAnimate(true)
+      }, convertToMilliseconds(props.initialDelay))
+    } else {
+      setAnimate(true)
+    }
   }, [props.iterations])
 
-  const [animate, setAnimate] = React.useState(true)
+  const [animate, setAnimate] = React.useState(false)
   const [iteration, setIteration] = React.useState(0)
 
   const style = {
@@ -35,10 +41,11 @@ const Animation = (props: Props) => {
 
   return (
     <div
+      data-testid='animation-component'
       onAnimationStart={props.onAnimationStart}
       onAnimationEnd={props.onAnimationEnd}
       onAnimationIteration={handleIteration}
-      className={animate ? `${props.className} ${css.base_animation}` : ''}
+      className={`${animate && !props.disabled ? css.baseAnimation : css.noAnimation} ${!props.disabled && props.className}`}
       style={style}
     >
       {props.children}

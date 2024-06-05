@@ -8,19 +8,7 @@ export interface Props extends BaseProps {}
 /**
  * A pulse animation.
  */
-const Pulse = (props: Props) => (
-  <Animation
-    onAnimationStart={props.onAnimationStart}
-    onAnimationEnd={props.onAnimationEnd}
-    className={css.animation}
-    duration={props.duration}
-    reverse={props.reverse}
-    iterations={props.iterations}
-    iterationDelay={props.iterationDelay}
-  >
-    {props.children}
-  </Animation>
-)
+const Pulse = (props: Props) => <Animation {...props} className={css.animation} />
 
 Pulse.defaultProps = defaultProps
 

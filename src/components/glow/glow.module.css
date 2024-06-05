@@ -1,0 +1,14 @@
+.animation {
+  animation-name: glow;
+  border-radius: inherit;
+}
+
+@keyframes glow {
+  20%,
+  80% {
+    box-shadow: 0 0 var(--offset) calc(var(--offset) * -1) var(--color);
+  }
+  50% {
+    box-shadow: 0 0 var(--offset) var(--offset) var(--color);
+  }
+}

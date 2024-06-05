@@ -1,5 +1,9 @@
-.base_animation {
+.baseAnimation {
   animation-duration: var(--duration);
   animation-iteration-count: var(--iterations);
   animation-direction: var(--direction);
+}
+
+.noAnimation {
+  animation: none;
 }
