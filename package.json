@@ -1,6 +1,6 @@
 {
   "name": "react-subtle-nudge",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A collection of animations to subtly nudge users to your React components.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -23,7 +23,7 @@
     "storybook": "NODE_ENV=development storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run clean && npm run precheck && npm run rollup",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "keywords": [
     "react",
