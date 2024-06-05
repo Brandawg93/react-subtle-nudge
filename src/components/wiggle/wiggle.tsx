@@ -8,11 +8,7 @@ export interface Props extends BaseProps {}
 /**
  * A wiggle animation.
  */
-const Wiggle = (props: Props) => (
-  <Animation {...props} className={css.animation}>
-    {props.children}
-  </Animation>
-)
+const Wiggle = (props: Props) => <Animation {...props} className={css.animation} />
 
 Wiggle.defaultProps = defaultProps
 

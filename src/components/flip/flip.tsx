@@ -8,11 +8,7 @@ export interface Props extends BaseProps {}
 /**
  * A flip animation.
  */
-const Flip = (props: Props) => (
-  <Animation {...props} className={css.animation}>
-    {props.children}
-  </Animation>
-)
+const Flip = (props: Props) => <Animation {...props} className={css.animation} />
 
 Flip.defaultProps = defaultProps
 

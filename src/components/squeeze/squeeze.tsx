@@ -8,11 +8,7 @@ export interface Props extends BaseProps {}
 /**
  * A squeeze animation.
  */
-const Squeeze = (props: Props) => (
-  <Animation {...props} className={css.animation}>
-    {props.children}
-  </Animation>
-)
+const Squeeze = (props: Props) => <Animation {...props} className={css.animation} />
 
 Squeeze.defaultProps = defaultProps
 

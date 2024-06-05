@@ -45,7 +45,7 @@ const Animation = (props: Props) => {
       onAnimationStart={props.onAnimationStart}
       onAnimationEnd={props.onAnimationEnd}
       onAnimationIteration={handleIteration}
-      className={`${animate && !props.disabled ? css.baseAnimation : css.noAnimation} ${props.className}`}
+      className={`${animate && !props.disabled ? css.baseAnimation : css.noAnimation} ${!props.disabled && props.className}`}
       style={style}
     >
       {props.children}

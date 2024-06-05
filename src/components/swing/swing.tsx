@@ -8,11 +8,7 @@ export interface Props extends BaseProps {}
 /**
  * A swing animation.
  */
-const Swing = (props: Props) => (
-  <Animation {...props} className={css.animation}>
-    {props.children}
-  </Animation>
-)
+const Swing = (props: Props) => <Animation {...props} className={css.animation} />
 
 Swing.defaultProps = defaultProps
 

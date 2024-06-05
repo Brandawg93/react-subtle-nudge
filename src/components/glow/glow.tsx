@@ -19,11 +19,7 @@ const Glow = (props: Props) => {
     '--color': `${props.color || 'white'}`,
   } as React.CSSProperties
 
-  return (
-    <Animation {...props} className={css.animation} style={style}>
-      {props.children}
-    </Animation>
-  )
+  return <Animation {...props} className={css.animation} style={style} />
 }
 
 Glow.defaultProps = {

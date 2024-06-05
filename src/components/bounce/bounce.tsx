@@ -8,11 +8,7 @@ export interface Props extends BaseProps {}
 /**
  * A bounce animation.
  */
-const Bounce = (props: Props) => (
-  <Animation {...props} className={css.animation}>
-    {props.children}
-  </Animation>
-)
+const Bounce = (props: Props) => <Animation {...props} className={css.animation} />
 
 Bounce.defaultProps = defaultProps
 

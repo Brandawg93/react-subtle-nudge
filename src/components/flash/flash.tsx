@@ -8,11 +8,7 @@ export interface Props extends BaseProps {}
 /**
  * A flash animation.
  */
-const Flash = (props: Props) => (
-  <Animation {...props} className={css.animation}>
-    {props.children}
-  </Animation>
-)
+const Flash = (props: Props) => <Animation {...props} className={css.animation} />
 
 Flash.defaultProps = defaultProps
 
