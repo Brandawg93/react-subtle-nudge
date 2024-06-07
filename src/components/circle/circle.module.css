@@ -1,3 +1,8 @@
+.outer {
+  position: relative;
+  border-radius: inherit;
+}
+
 .animation {
   --start-percent: 40%;
   --end-percent: 60%;
@@ -35,11 +40,6 @@
     height: calc(100% - 2 * var(--offset));
     width: calc(100% - 2 * var(--offset));
   }
-}
-
-.outer {
-  position: relative;
-  border-radius: inherit;
 }
 
 @keyframes rotate {

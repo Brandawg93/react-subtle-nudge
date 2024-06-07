@@ -21,7 +21,7 @@ const Circle = (props: Props) => {
 
   return (
     <div className={css.outer}>
-      <Animation {...props} children={undefined} className={css.animation} style={style}></Animation>
+      <Animation {...props} children={undefined} className={css.animation} style={style} hasPseudo></Animation>
       {props.children}
     </div>
   )

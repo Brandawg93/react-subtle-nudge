@@ -6,6 +6,7 @@ export interface Props extends BaseProps {
   onAnimationIteration?: () => void
   className?: string
   style?: React.CSSProperties
+  hasPseudo?: boolean
 }
 
 const Animation = (props: Props) => {
@@ -29,6 +30,10 @@ const Animation = (props: Props) => {
     '--direction': `${props.reverse ? 'reverse' : 'normal'}`,
   } as React.CSSProperties
 
+  const noAnimationClassName = props.hasPseudo ? css.noPseudoAnimation : css.noAnimation
+  const animationClassName = animate && !props.disabled ? css.baseAnimation : noAnimationClassName
+  const className = `${animationClassName} ${!props.disabled && props.className}`
+
   const handleIteration = () => {
     setAnimate(false)
     if (!props.iterations || (props.iterations && iteration + 1 < props.iterations)) {
@@ -45,7 +50,7 @@ const Animation = (props: Props) => {
       onAnimationStart={props.onAnimationStart}
       onAnimationEnd={props.onAnimationEnd}
       onAnimationIteration={handleIteration}
-      className={`${animate && !props.disabled ? css.baseAnimation : css.noAnimation} ${!props.disabled && props.className}`}
+      className={className}
       style={style}
     >
       {props.children}

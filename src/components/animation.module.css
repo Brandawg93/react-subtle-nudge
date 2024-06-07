@@ -7,3 +7,10 @@
 .noAnimation {
   animation: none;
 }
+
+.noPseudoAnimation {
+  &::before {
+    animation: none !important;
+    display: none;
+  }
+}
